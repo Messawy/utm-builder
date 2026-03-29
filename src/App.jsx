@@ -136,7 +136,7 @@ export default function App() {
   };
 
   // CHANGE THIS to your Cloudflare Worker URL after deploying
-  var SHORTENER_PROXY = "https://shortener-proxy.YOUR_ACCOUNT.workers.dev";
+  var SHORTENER_PROXY = "https://shortener-proxy.saasgate.workers.dev";
 
   var shortenUrl = function(){
     if(!utmUrl)return;
