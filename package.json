@@ -2,7 +2,6 @@
   "name": "utm-builder",
   "private": true,
   "version": "1.0.0",
-  "homepage": "/allena-utm-builder/",
   "type": "module",
   "scripts": {
     "dev": "vite",
