@@ -1,14 +1,14 @@
 import { useState, useMemo, useCallback, useEffect } from "react";
 
 const D = {
-  platforms:[{code:"meta",full:"Meta (FB/IG)",medium:"paid-social"},{code:"google",full:"Google Ads - Search",medium:"paid-search"},{code:"google-yt",full:"Google Ads - Display/YT",medium:"paid-video"},{code:"tiktok",full:"TikTok Ads",medium:"paid-social"},{code:"snapchat",full:"Snapchat Ads",medium:"paid-social"}],
+  platforms:[{code:"meta",full:"Meta (FB/IG)",medium:"paid"},{code:"google",full:"Google Ads",medium:"cpc"},{code:"tiktok",full:"TikTok Ads",medium:"paid"},{code:"snapchat",full:"Snapchat Ads",medium:"paid"}],
   types:[{code:"pros",full:"Prospecting"},{code:"reta",full:"Retargeting"}],
-  objectives:[{code:"sales",full:"Conversion / Sales",plat:"All"},{code:"vid",full:"Video Views",plat:"All"},{code:"cat",full:"Catalog Sales",plat:"All"},{code:"adv",full:"Advantage+ Meta",plat:"Meta"},{code:"srch",full:"Search",plat:"Google, TikTok"},{code:"dgen",full:"Demand Gen",plat:"Google"},{code:"app",full:"App Promotion",plat:"All"},{code:"pmax",full:"Google PMax",plat:"Google"},{code:"smart",full:"TikTok/Snap Smart",plat:"TikTok, Snap"},{code:"test-sales",full:"Testing Sales",plat:"All"},{code:"test-adv",full:"Testing Advantage+",plat:"Meta"},{code:"test-smart",full:"Testing Smart",plat:"TikTok, Snap"},{code:"test-pmax",full:"Testing PMax",plat:"Google"}],
+  objectives:[{code:"sales",full:"Conversion / Sales",plat:"All"},{code:"vid",full:"Video Views",plat:"All"},{code:"cata",full:"Catalog Sales",plat:"All"},{code:"adv",full:"Advantage+ Meta",plat:"Meta"},{code:"srch",full:"Search",plat:"Google, TikTok"},{code:"dgen",full:"Demand Gen",plat:"Google"},{code:"app",full:"App Promotion",plat:"All"},{code:"pmax",full:"Google PMax",plat:"Google"},{code:"smart",full:"TikTok/Snap Smart",plat:"TikTok, Snap"},{code:"test-sales",full:"Testing Sales",plat:"All"},{code:"test-adv",full:"Testing Advantage+",plat:"Meta"},{code:"test-smart",full:"Testing Smart",plat:"TikTok, Snap"},{code:"test-pmax",full:"Testing PMax",plat:"Google"}],
   collections:[
-    {code:"all",full:"All Aleena's Women Dresses",cat:"Core",url:"https://shopaleena.com/ar/collections/all-aleena"},
-    {code:"al2",full:"Shop All Products",cat:"General",url:"https://shopaleena.com/ar/collections/all"},
+    {code:"all",full:"All Aleena's Women Dresses",cat:"Core",url:"https://shopaleena.com/ar/collections/all"},
+    {code:"al2",full:"Shop All Products",cat:"General",url:"https://shopaleena.com/ar/collections/all-aleena"},
     {code:"aps",full:"Aleena Premium Service",cat:"Internal",url:"https://shopaleena.com/ar/collections/aleena-premium-service"},
-    {code:"al1",full:"Silk Eye Masks & Pillowcases",cat:"Home",url:"https://shopaleena.com/ar/collections/aleena-home-silk"},
+    {code:"hom",full:"Silk Eye Masks & Pillowcases",cat:"Home",url:"https://shopaleena.com/ar/collections/aleena-home-silk"},
     {code:"bac",full:"Back In Stock",cat:"Core",url:"https://shopaleena.com/ar/collections/back-in-stock"},
     {code:"btw",full:"Work & Formal Wear",cat:"General",url:"https://shopaleena.com/ar/collections/back-to-work"},
     {code:"bag",full:"Bags Collection",cat:"Core",url:"https://shopaleena.com/ar/collections/bags-collection"},
